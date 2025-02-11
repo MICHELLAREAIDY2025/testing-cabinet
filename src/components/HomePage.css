@@ -1,0 +1,145 @@
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 100%;
+    height:600px;
+}
+.title{
+    font-size:xxx-large;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Container for the filter tabs */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  /* Style for each individual tab */
+  .filter-tabs div {
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+    position: relative; /* For positioning the underline */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Active tab style with underline */
+  .filter-tabs div.active {
+    color: black; /* Active color (blue) */
+  }
+  
+  /* Underline effect on the active tab */
+  .filter-tabs div.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black; /* Underline color */
+    transition: width 0.3s ease;
+  }
+  
+  /* Hover effect on tabs */
+  .filter-tabs div:hover {
+    color: black; /* Darker color on hover */
+  }
+  
+
+  
+
+ /* Style the events list to show them in a row (side by side) */
+.events-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows the events to wrap onto the next line if needed */
+    gap: 20px; /* Adds space between the event cards */
+  }
+  
+  /* Ensures event cards are arranged in a responsive grid */
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid with a minimum of 250px width per card */
+    gap: 20px; /* Adds space between the event cards */
+    padding: 20px;
+  }
+  
+  /* Style each individual event card */
+  .event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the image section within the event card */
+  .event-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the images inside each event card */
+  .event-image img {
+    width: 150px; /* Set image width */
+    height: 150px; /* Set image height */
+    object-fit: cover; /* Maintain aspect ratio and prevent stretching */
+    border-radius: 5px;
+  }
+  
+  /* Style the event details (title, dates, etc.) */
+  .event-details {
+    flex-grow: 1; /* Allows event details to take the remaining space */
+  }
+  
+  /* Style the text inside event details */
+  .event-details h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .event-details p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+
+
+  /* Style the "Book Now" button */
+.book-now-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: black; /* Green background color for booking */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Shows a pointer cursor on hover */
+    margin-top: 15px; /* Adds space above the button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 100%; /* Ensures the button spans across the width of the card */
+  }
+  
+  /* Button hover effect */
+  .book-now-button:hover {
+    background-color: black; /* Darker green on hover */
+  }
+  
