@@ -1,0 +1,126 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 5%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Concept Section */
+  .concept-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d2ebeb;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .concept-text {
+    width: 50%;
+  }
+  
+  .concept-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .concept-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .concept-image {
+    width: 40%;
+  }
+  
+  .concept-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Objectives Section */
+  .objectives-container {
+    background-color: #f4d4c8;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .objectives-container h2 {
+    margin-bottom: 30px;
+  }
+  
+  .objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .objective {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+  }
+  
+  .objective img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .objective-text h3 {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  
+  .objective-text p {
+    font-size: 14px;
+  }
+  
+  /* Team Section */
+  .team-container {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .team-container h2 {
+    background-color: #d9c8ff;
+    padding: 10px;
+    font-size: 24px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member h4 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .team-member p {
+    font-size: 14px;
+    color: #555;
+  }
+  

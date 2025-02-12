@@ -1,0 +1,98 @@
+/* src/ContactHero.css */
+
+.hero-section {
+    background-color: #AADFDF;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex; /* This ensures the icons are aligned horizontally */
+    justify-content: center; /* Align icons in the center of the section */
+    gap: 30px; /* Adds space between the icons */
+}
+
+.icon {
+    display: flex; /* Aligns the image and text horizontally */
+    align-items: center; /* Vertically aligns the image and text */
+}
+
+.icon img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    margin-right: 10px; /* Space between the icon and the text */
+}
+
+.icon p {
+    margin: 0; /* Remove default margin from the text */
+}
+
+.tiitle {
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-form-container {
+    width: 65%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form-container button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #555;
+}
