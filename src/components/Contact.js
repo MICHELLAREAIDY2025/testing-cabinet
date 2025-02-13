@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";  // Import the Navbar component
+//import Navbar from "./Navbar";  // Import the Navbar component
 import "./Contact.css";
 import insta from "../assets/images/download.jpeg";
 import email from "../assets/images/download.png";

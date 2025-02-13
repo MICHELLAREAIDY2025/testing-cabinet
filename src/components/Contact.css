@@ -5,6 +5,9 @@
     padding: 40px;
     text-align: center;
     color: #333;
+    max-width: 1200px;  /* Adjust as needed */
+    margin: 0 auto;  /* Centers the div */
+    padding: 0 20px; /* Adds space inside */
 }
 
 .hero-section h1 {
@@ -47,6 +50,9 @@
 .contact-container {
     display: flex;
     gap: 20px;
+    max-width: 1200px;  /* Adjust as needed */
+    margin: 0 auto;  /* Centers the div */
+    padding: 0 20px; /* Adds space inside */
 }
 
 .contact-info {
