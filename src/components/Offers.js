@@ -1,6 +1,6 @@
 // src/components/OfferPage.js
 import React, { useState } from "react";
-//import Navbar from "./Navbar";
+import Navbar from "./Navbar";
 import "./Offers.css";
 import offerImage from "../assets/images/6.Dance your soul away.png";
 
