@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Offers from "./components/Offers"; 
 import About from "./components/About";
 
+
+
 const App = () => {
   return (
     <Router>

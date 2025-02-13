@@ -11,7 +11,6 @@ const About = () => {
   return (
     <div className="about-page">
       
-      {/* Concept Section */}
       <div className="concept-container">
         <div className="concept-text">
           <h2><strong>Concept</strong></h2>
@@ -28,7 +27,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Objectives Section */}
       <div className="objectives-container">
         <h2><strong>Objectives</strong></h2>
         <div className="objectives-grid">
@@ -62,7 +60,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Team Section */}
+   
       <div className="team-container">
         <h2><strong>Team</strong></h2>
         <div className="team-members">
