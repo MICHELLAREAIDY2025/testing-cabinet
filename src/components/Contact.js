@@ -25,11 +25,34 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  /*const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     alert("Your registration request has been sent!");
+  };*/
+//backend submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        console.log("Form data sent successfully:", formData);
+        alert("Your registration request has been sent!");
+      } else {
+        console.error("Error sending form data");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
+  
 
   return (
     <div>

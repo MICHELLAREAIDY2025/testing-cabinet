@@ -1,12 +1,37 @@
-/*.footer {
-    margin-top: 20px;
-    padding: 20px;
-    background: #333;
-    color: white;
-    text-align: center;
-  }
-  
-  .footer-icons span {
-    margin: 10px;
-    font-size: 24px;
-  }*/
+/* src/components/Footer.css */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  background-color: #ffffff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #6C2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #333333;
+}

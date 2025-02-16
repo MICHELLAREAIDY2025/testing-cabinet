@@ -1,16 +1,22 @@
-/*import React from "react";
+// src/components/Footer.jsx
+import { FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import './Footer.css';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-icons">
-        <span>📞</span>
-        <span>📧</span>
-        <span>📸</span>
+        <div className="icon-circle">
+          <FaPhone size={20} />
+        </div>
+        <div className="icon-circle">
+          <FaEnvelope size={20} />
+        </div>
+        <div className="icon-circle">
+          <FaInstagram size={20} />
+        </div>
       </div>
-      <p>© 2025 - Cabinet D’artiste</p>
+      <p className="footer-text">© 2025 - Cabinet D’artiste</p>
     </footer>
   );
-};
-
-export default Footer;*/
+}
