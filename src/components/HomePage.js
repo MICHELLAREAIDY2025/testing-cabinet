@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,6 +15,8 @@ import "./HomePage.css";
 
 const Home = () => {
   const [filter, setFilter] = useState("past");
+  //for backend 
+  const [events, setEvents] = useState([]);
 
   const pastEvents = [
     {
@@ -73,6 +76,19 @@ const Home = () => {
     },
   
   ];
+    // Fetch data from the backend
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch("http://localhost:5000/homepage");
+          const data = await response.json();
+          setEvents(data);
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      };
+      fetchData();
+    }, []);
   const handleBookNowClick = () => {
     // Redirect to the Contact Us page
     window.location.href = "/contact"; // Change this URL to where your Contact Us page is located
